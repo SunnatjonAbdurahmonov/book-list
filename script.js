@@ -34,7 +34,7 @@ window.addEventListener("DOMContentLoaded", () => {
       bookAuthor.value = "";
       bookYear.value = "";
 
-      if (bookTitle.value === "" && bookAuthor.value === "" && bookYear.value === "") {
+      if (bookTitle.value === '' && bookAuthor.value === '' && bookYear.value === "") {
         alert("Oops Write Your book!");
       }
     }
