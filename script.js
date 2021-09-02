@@ -8,8 +8,8 @@ window.addEventListener("DOMContentLoaded", () => {
   addBook.addEventListener("click", (event) => {
     event.preventDefault();
 
-    if (bookTitle == "" && bookAuthor == "" && bookYear == "") {
-      alert("OOPS!");
+    if (bookTitle.value === '' && bookAuthor.value === '' && bookYear.value === "") {
+      alert("Oops Write Your book!");
     } else {
       const newRow = document.createElement("tr");
 
@@ -33,10 +33,6 @@ window.addEventListener("DOMContentLoaded", () => {
       bookTitle.value = "";
       bookAuthor.value = "";
       bookYear.value = "";
-
-      if (bookTitle.value === '' && bookAuthor.value === '' && bookYear.value === "") {
-        alert("Oops Write Your book!");
-      }
     }
   });
 });
